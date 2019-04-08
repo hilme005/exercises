@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Tails Rescue</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<body>
+<div id="page">
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/ht_logo.png" height="120"/>
+            </a>
+        </div>
+        <!--<div class="title">Happy Tails Rescue</div>-->
+        <!--<div class="tagline">Where happy "tails" begin!</div>-->
+
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Adopt.html">ADOPT</a></li>
+            <li><a href="Support.html">SUPPORT</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+            <li><a href="Resources.html">RESOURCES</a></li>
+            <li><a>LOG IN</a></li>
+            <li><a>GALLERY</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!--SLIDESHOW-->
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+        <!--<div class="numbertext"></div>-->
+        <img src="images/tails_images-01.jpg" style="width:100%;"/>
+        <!--<div class="text">Caption?</div>-->
+    </div>
+
+    <div class="mySlides fade">
+        <!--<div class="numbertext"></div>-->
+        <img src="images/tails_images-02.jpg" style="width:100%;"/>
+        <!--<div class="text">Caption2</div>-->
+    </div>
+
+    <div class="mySlides fade">
+        <!--<div class="numbertext"></div>-->
+        <img src="images/tails_images-03.jpg" style="width:100%;"/>
+        <!--<div class="text">Caption3</div>-->
+    </div>
+
+    <div class="mySlides fade">
+        <!--<div class="numbertext"></div>-->
+        <img src="images/tails_images-04.jpg" style="width:100%;"/>
+        <!--<div class="text">Caption4</div>-->
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!--MAIN TEXT-->
+<div id="page_content">
+    <div class="content_title">Welcome to Happy Tails Rescue!</div>
+    <div class="about">
+        <p>
+            Happy Tails Rescue of Minnesota, founded in 2005, is a 501 (c) (3) non-profit organization dedicated to
+            rescuing homeless and abandoned animals. By working with committed volunteers, foster homes, local
+            veterinarians, trainers and boarding facilities, we are able to rescue dogs and cats providing them with
+            loving temporary care until a well-matched, carefully screened forever home can be found.
+        </p>
+    </div>
+    <div class="hours">
+        <p>
+            Come Visit Us! <br>
+            Open Sundays 12:00pm to 5:00pm <br>
+            We are closed Monday through Saturday.
+        </p>
+    </div>
+    <div class="questions">
+        <p>
+            Have Questions? <br>
+        </p>
+        <p class="here"><a href="Contact.html">Submit them HERE and we will get back to you soon! </a>
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+<hr>
+
+<!--FOOTER CONTENT-->
+<div class="footer_content">
+    <p>
+        We find beauty in the most incomprehensible places and the otherwise homely faces. It is our gift to see beyond
+        the dirt, terror, sadness and the defeat to find the true soul that lies within. We are Happy Tails Rescue!
+    </p>
+
+    <img src="images/license_kennel.jpg" height="171" width="304"/></div>
+
+
+<script>
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+
+
+    // var slideIndex = 1;
+    // showSlides(slideIndex);
+    //
+    // function plusSlides(n) {
+    //     showSlides(slideIndex += n);
+    // }
+    //
+    // function currentSlide(n) {
+    //     showSlides(slideIndex = n);
+    // }
+    //
+    // function showSlides(n) {
+    //     var i;
+    //     var slides = document.getElementsByClassName("mySlides");
+    //     var dots = document.getElementsByClassName("dot");
+    //     if (n > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     if (n < 1) {
+    //         slideIndex = slides.length
+    //     }
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     for (i = 0; i < dots.length; i++) {
+    //         dots[i].className = dots[i].className.replace(" active", "");
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     dots[slideIndex - 1].className += " active";
+    //
+    //
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slideIndex++;
+    //     if (slideIndex > slides.length) {
+    //         slideIndex = 1
+    //     }
+    //     for (i = 0; i < dots.length; i++) {
+    //         dots[i].className = dots[i].className.replace(" active", "");
+    //     }
+    //     slides[slideIndex - 1].style.display = "block";
+    //     dots[slideIndex - 1].className += " active";
+    //     setTimeout(showSlides, 4000); // Change image every 4 seconds
+    // }
+
+
+</script>
+
+</body>
+</html>

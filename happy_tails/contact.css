@@ -1,0 +1,149 @@
+.title, .tagline {
+    text-align: center;
+    font-size: 20pt;
+    color: midnightblue;
+    margin-bottom: 5px;
+    font-family: "Avenir Next", sans-serif;
+    padding-top: 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.tagline {
+    font-size: 10pt;}
+
+.menu {
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: 	rgb(193,198,200); }
+
+ul {
+    /*border: 1px solid #e7e7e7;*/
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 28px;
+    overflow: hidden;
+}
+
+li {
+    color: #666;
+    display: inline;
+}
+
+li a {
+    display: block;
+    font-family: "Brandon Grotesque", sans-serif;
+    color: dimgrey;
+    text-align: center;
+    padding: 18px 24px;
+    text-decoration: none;
+    display: inline;
+
+}
+
+.content {
+    text-align: right;
+    float: left;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.headings {
+    color: midnightblue;
+    font-weight: bold;
+}
+
+#form {
+    text-align: center;
+    color: midnightblue;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    padding-top: 600px;
+}
+
+body {font-family: "Avenir Next", sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: midnightblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background-image: linear-gradient(to bottom right, plum, magenta, orange, yellow);
+    color: white;
+}
+
+.map{
+    float: right;
+    padding-right: 150px;
+    padding-top: 30px;
+}
+
+.footer_content {
+    text-align: center;
+    font-size: 12pt;
+    color: midnightblue;
+    font-family: "Avenir Next", sans-serif;
+    padding-left: 310px;
+    padding-right: 310px;
+    padding-top: 20px;
+}

@@ -1,0 +1,225 @@
+.title, .tagline {
+    text-align: center;
+    font-size: 20pt;
+    color: midnightblue;
+    margin-bottom: 5px;
+    font-family: "Avenir Next", sans-serif;
+    padding-top: 0px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 58px;
+    padding-bottom: 20px;
+}
+
+.tagline {
+    font-size: 10pt;}
+
+/*MENU BAR*/
+.menu {
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: 	rgb(193,198,200); }
+
+ul {
+    /*border: 1px solid #e7e7e7;*/
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 33.5px;
+    overflow: hidden;
+}
+
+li {
+    color: #666;
+    display: inline;
+}
+
+li a {
+    display: block;
+    font-family: "Brandon Grotesque", sans-serif;
+    color: dimgrey;
+    text-align: center;
+    padding: 18px 23.7px;
+    text-decoration: none;
+    display: inline;
+
+}
+
+/*SLIDESHOW*/
+
+/*<!-- Slideshow container -->*/
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/*<!-- Next and previous buttons -->*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: dimgray;
+}
+
+/*<!-- The dots/circles -->*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*END SLIDESHOW CONTENT*/
+
+
+/*MAIN TEXT*/
+.content_title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20pt;
+    color: midnightblue;
+    margin-bottom: 5px;
+    font-family: "Avenir Next", sans-serif;
+    padding-top: 0px;
+}
+
+.about, .hours, .questions {
+    text-align: center;
+    font-size: 12pt;
+    color: dimgray;
+    font-family: "Avenir Next", sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.hours {
+    color: midnightblue;
+    padding-top: 10px;
+}
+
+.questions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.here {
+    text-decoration: underline;
+    color: deeppink;
+}
+
+
+/*FOOTER CONTENT*/
+.footer_content {
+    text-align: center;
+    font-size: 12pt;
+    color: midnightblue;
+    font-family: "Avenir Next", sans-serif;
+    padding-left: 310px;
+    padding-right: 310px;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
